@@ -1,0 +1,4 @@
+../Core/Src/Potentiometer.c:5:6:Potentiometer_SendBytes	16	static
+../Core/Src/Potentiometer.c:14:6:Potentiometer_Inint	8	static
+../Core/Src/Potentiometer.c:20:6:Potentiometer_SendResistance	16	static
+../Core/Src/Potentiometer.c:29:9:Potentiometer_GetResistance	4	static

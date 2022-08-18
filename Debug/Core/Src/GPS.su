@@ -1,0 +1,8 @@
+../Core/Src/GPS.c:15:8:convertDegMinToDecDeg	40	static
+../Core/Src/GPS.c:30:6:GetData	8	static
+../Core/Src/GPS.c:36:6:TxDataTerminal	8	static
+../Core/Src/GPS.c:43:6:GPS_CallBack	8	static
+../Core/Src/GPS.c:59:6:GPS_Process	72	static
+../Core/Src/GPS.c:92:5:GPS_SYNCING	16	static
+../Core/Src/GPS.c:117:7:Get_UTC_Hour_Fix	4	static
+../Core/Src/GPS.c:122:7:Send_UTC_Hour_Fix	16	static

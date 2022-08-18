@@ -1,0 +1,10 @@
+../Core/Src/magnetic.c:7:5:bufsize	24	static
+../Core/Src/magnetic.c:14:6:clear_buffer	24	static
+../Core/Src/magnetic.c:19:6:send_uart	24	static
+../Core/Src/magnetic.c:25:6:Card_Capacity	8	static
+../Core/Src/magnetic.c:39:6:Card_Write	16	static
+../Core/Src/magnetic.c:54:6:Card_Write_Buff	16	static
+../Core/Src/magnetic.c:64:6:Card_Read	16	static
+../Core/Src/magnetic.c:79:5:File_Create	16	static
+../Core/Src/magnetic.c:96:6:push	24	static
+../Core/Src/magnetic.c:104:6:Data_Package	40	static
