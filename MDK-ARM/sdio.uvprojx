@@ -2476,11 +2476,6 @@
               <FilePath>.\magnitometr\fonts.c</FilePath>
             </File>
             <File>
-              <FileName>displays.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\magnitometr\displays.c</FilePath>
-            </File>
-            <File>
               <FileName>st7735.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\magnitometr\st7735.c</FilePath>
@@ -2491,11 +2486,6 @@
               <FilePath>..\Core\Src\GPS.c</FilePath>
             </File>
             <File>
-              <FileName>magnetic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\magnitometr\magnetic.c</FilePath>
-            </File>
-            <File>
               <FileName>new_display.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\magnitometr\new_display.c</FilePath>
@@ -2504,6 +2494,11 @@
               <FileName>FlashPROM.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\magnitometr\FlashPROM.c</FilePath>
+            </File>
+            <File>
+              <FileName>magnetic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\magnitometr\magnetic.c</FilePath>
             </File>
           </Files>
         </Group>

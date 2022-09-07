@@ -25,7 +25,7 @@
 /* USER CODE BEGIN Includes */
 #include "string.h"
 #include "diskio.h"
-#include "displays.h"
+#include "new_display.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,7 +99,7 @@ uint32_t gpio_pin;
 volatile unsigned long  LastTime;
 volatile uint16_t adc[3] = {0,};
 volatile uint8_t flag_toggle = 0;
-volatile uint8_t Counter2 = 0;
+uint32_t res_addr = 0;
 /* USER CODE END 0 */
 
 /**
@@ -159,7 +159,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		MainMenu_Parent();
+		//MainMenu_Parent();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -720,7 +720,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_PIN)
 {
-	++Counter2;
+	
   MainMenu_BattonClick_CallBack(GPIO_PIN);
 }
 //********************************************************************//

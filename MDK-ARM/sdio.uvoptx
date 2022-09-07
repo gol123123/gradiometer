@@ -161,7 +161,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\magnitometr\displays.c</Filename>
+          <Filename>C:\Users\ornstein\Desktop\magnitometr version\DIV\MDK-ARM\magnitometr\displays.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -177,7 +177,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\magnitometr\displays.c</Filename>
+          <Filename>C:\Users\ornstein\Desktop\magnitometr version\DIV\MDK-ARM\magnitometr\displays.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\sdio\magnitometr/displays.c\722</Expression>
         </Bp>
@@ -193,7 +193,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\magnitometr\displays.c</Filename>
+          <Filename>C:\Users\ornstein\Desktop\magnitometr version\DIV\MDK-ARM\magnitometr\displays.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -209,7 +209,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\magnitometr\displays.c</Filename>
+          <Filename>C:\Users\ornstein\Desktop\magnitometr version\DIV\MDK-ARM\magnitometr\displays.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -225,7 +225,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\magnitometr\displays.c</Filename>
+          <Filename>C:\Users\ornstein\Desktop\magnitometr version\DIV\MDK-ARM\magnitometr\displays.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -1113,18 +1113,6 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\magnitometr\displays.c</PathWithFileName>
-      <FilenameWithoutPath>displays.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>11</GroupNumber>
-      <FileNumber>52</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
       <PathWithFileName>.\magnitometr\st7735.c</PathWithFileName>
       <FilenameWithoutPath>st7735.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
@@ -1132,7 +1120,7 @@
     </File>
     <File>
       <GroupNumber>11</GroupNumber>
-      <FileNumber>53</FileNumber>
+      <FileNumber>52</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -1144,13 +1132,25 @@
     </File>
     <File>
       <GroupNumber>11</GroupNumber>
+      <FileNumber>53</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>1</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\magnitometr\new_display.c</PathWithFileName>
+      <FilenameWithoutPath>new_display.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>11</GroupNumber>
       <FileNumber>54</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\magnitometr\magnetic.c</PathWithFileName>
-      <FilenameWithoutPath>magnetic.c</FilenameWithoutPath>
+      <PathWithFileName>.\magnitometr\FlashPROM.c</PathWithFileName>
+      <FilenameWithoutPath>FlashPROM.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1161,20 +1161,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\magnitometr\new_display.c</PathWithFileName>
-      <FilenameWithoutPath>new_display.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>11</GroupNumber>
-      <FileNumber>56</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>.\magnitometr\FlashPROM.c</PathWithFileName>
-      <FilenameWithoutPath>FlashPROM.c</FilenameWithoutPath>
+      <PathWithFileName>.\magnitometr\magnetic.c</PathWithFileName>
+      <FilenameWithoutPath>magnetic.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

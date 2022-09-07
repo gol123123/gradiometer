@@ -49,12 +49,11 @@
 "sdio\ff_gen_drv.o"
 "sdio\syscall.o"
 "sdio\fonts.o"
-"sdio\displays.o"
 "sdio\st7735.o"
 "sdio\gps.o"
-"sdio\magnetic.o"
 "sdio\new_display.o"
 "sdio\flashprom.o"
+"sdio\magnetic.o"
 --strict --scatter "sdio\sdio.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

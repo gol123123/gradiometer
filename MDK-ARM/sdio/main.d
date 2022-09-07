@@ -49,7 +49,7 @@ sdio/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Core\Inc\usbd_def.h ..\Core\Inc\usbd_conf.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h ..\Core\Inc\main.h \
-  ..\Core\Inc\diskio.h ..\Core\Inc\displays.h ..\Core\Inc\st7735.h \
-  ..\Core\Inc\fonts.h ..\Core\Inc\st7735_cfg.h \
+  ..\Core\Inc\diskio.h magnitometr\new_display.h magnitometr\st7735.h \
+  magnitometr\fonts.h magnitometr\st7735_cfg.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  ..\Core\Inc\Potentiometer.h ..\Core\Inc\magnetic.h ..\Core\Inc\GPS.h
+  magnitometr\magnetic.h ..\Core\Inc\GPS.h magnitometr\FlashPROM.h

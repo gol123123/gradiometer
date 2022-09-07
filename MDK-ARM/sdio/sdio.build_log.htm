@@ -22,20 +22,26 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 C:\Users\ornstein\Desktop\magnitometr version\DIV\MDK-ARM\sdio.uvprojx
-Project File Date:  08/02/2022
+Project File Date:  09/07/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'sdio'
-../Core/Src/main.c(102): error: redefinition of 'Counter2'
-volatile uint8_t Counter2 = 0;
-                 ^
-../Core/Inc\displays.h(17): note: previous definition is here
-volatile uint8_t Counter2 = 0;
-                 ^
-1 error generated.
+../Core/Src/main.c(28): warning: In file included from...
+./magnitometr\new_display.h(5): warning: In file included from...
+./magnitometr/magnetic.h(3): warning: In file included from...
+./magnitometr/FlashPROM.h(18): warning: 'BUFFSIZE' macro redefined [-Wmacro-redefined]
+#define BUFFSIZE 61                               // размер буфера для записи
+        ^
+../Core/Inc\GPS.h(6): note: previous definition is here
+#define BUFFSIZE 484
+        ^
+1 warning generated.
 compiling main.c...
-"sdio\sdio.axf" - 1 Error(s), 0 Warning(s).
+linking...
+Program Size: Code=64860 RO-data=3264 RW-data=372 ZI-data=21564  
+FromELF: creating hex file...
+"sdio\sdio.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -59,8 +65,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.5.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Target not created.
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

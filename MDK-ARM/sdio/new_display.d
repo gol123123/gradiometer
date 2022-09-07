@@ -44,9 +44,9 @@ sdio/new_display.o: magnitometr\new_display.c magnitometr\new_display.h \
   ..\Core\Inc\main.h magnitometr\st7735.h magnitometr\fonts.h \
   magnitometr\st7735_cfg.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  magnitometr\Potentiometer.h magnitometr\magnetic.h ..\Core\Inc\GPS.h \
-  ..\FATFS\App\fatfs.h ..\Core\Inc\ff.h ..\Core\Inc\integer.h \
-  ..\FATFS\Target\ffconf.h ..\FATFS\Target\bsp_driver_sd.h \
+  magnitometr\magnetic.h ..\Core\Inc\GPS.h ..\FATFS\App\fatfs.h \
+  ..\Core\Inc\ff.h ..\Core\Inc\integer.h ..\FATFS\Target\ffconf.h \
+  ..\FATFS\Target\bsp_driver_sd.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   ..\Core\Inc\ff_gen_drv.h ..\Core\Inc\diskio.h ..\Core\Inc\ff.h \
   ..\FATFS\Target\sd_diskio.h magnitometr\FlashPROM.h \

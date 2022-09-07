@@ -5,20 +5,22 @@
 #define States_Meas 4
 #define MAX 10
 
-extern volatile uint8_t flag_start;
-extern volatile uint8_t flag_adc;
-extern volatile uint8_t Counter;
-extern volatile uint8_t Enter;
-extern volatile uint8_t flag_exit;
-extern volatile uint8_t flag_enter;
-extern volatile uint8_t flag_toggle;
-extern volatile uint8_t Counter_two;
 
 extern TIM_HandleTypeDef htim10;
 
+volatile uint8_t flag_start  = 1;
+volatile uint8_t flag_adc    = 1;
+volatile uint8_t Counter     = 1;
+volatile uint8_t Enter       = 0;
+volatile uint8_t flag_exit   = 0;
+volatile uint8_t flag_enter  = 0;
+extern   uint32_t capacity[2];
+
 extern volatile uint16_t adc[3];
-extern uint32_t capacity[2];
 extern volatile unsigned long  LastTime;
+
+volatile uint8_t Counter2 = 0;
+
 
 typedef int State;  // состояние
 typedef State (*Action)(State state); // указатель на функцию
@@ -120,12 +122,6 @@ State MeasurementDataPackage(State state);
 State MeasurementStop(State state);
 
 
-void Menu_Blick(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, const char* str1, const char* str2, FontDef font);
-void MainMenu_Help_(void);
-void MainMenu_Exit_(void);
-void MainMenu_BattonClick_CallBack_(uint16_t GPIO_PIN);
-void MainMenu_ADC_CallBack_(void);
-
 // Определяем переменную мьютекса
 //[s0,c0,a1,s15]
 Transition take_MainMenu          = {State_MainMenuStart, MainMenuParent};
@@ -214,7 +210,7 @@ pTransition Measurement_transition_table[States_Meas]=
 ** Function name:           MCP41010_SPI_SendOneByte
 ** Description:             Sending data by SPI
 ***************************************************************************************/
-void MCP41010_SPI_SendOneByte_(int xtemp)
+void static MCP41010_SPI_SendOneByte(int xtemp)
 {
 	uint8_t xnum = 0;
 	
@@ -304,13 +300,13 @@ void StateMachin()
 ** Function name:           Menu_Blick
 ** Description:             displays the selected
 ***************************************************************************************/
-void Menu_Blick_(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, const char* str1, const char* str2, FontDef font)
+void Menu_Blick(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, const char* str1, const char* str2, FontDef font)
 {
  ST7735_DrawString(x1, y1,  str1, font, ST7735_BLUE, 0x1414);
-	if(Counter_two) {
+	if(Counter2) {
 		ST7735_DrawString(x1, y1,  str1, font, ST7735_BLUE, ST7735_BLACK);
 		ST7735_DrawString(x2, y2,  str2, font, ST7735_BLUE, ST7735_BLACK);
-		--Counter_two;
+		--Counter2;
 	}
 }
 
@@ -1144,6 +1140,10 @@ State Idle(State state)
 	return state;
 }
 
+State GPSFun(State state)
+{
+  return state;
+}
 /***************************************************************************************
 ** Function name:           fillRoundRect
 ** Description:             Draw a rounded corner filled rectangle
@@ -1182,8 +1182,9 @@ void MainMenu_Exit_()
 ** Function name:           fillRoundRect
 ** Description:             Draw a rounded corner filled rectangle
 ***************************************************************************************/
-void MainMenu_BattonClick_CallBack_(uint16_t GPIO_PIN)
+void MainMenu_BattonClick_CallBack(uint16_t GPIO_PIN)
 {
+	++Counter2;
 	uint8_t counter_old = Counter;
 	LastTime = HAL_GetTick();
 	switch (GPIO_PIN){
@@ -1229,7 +1230,7 @@ void MainMenu_BattonClick_CallBack_(uint16_t GPIO_PIN)
 ** Function name:           fillRoundRect
 ** Description:             Draw a rounded corner filled rectangle
 ***************************************************************************************/
-void MainMenu_Timer10_CallBack_()
+void MainMenu_Timer10_CallBack()
 {
 	 flag_exit = 0;
 	 Enter     = 0;
@@ -1238,7 +1239,7 @@ void MainMenu_Timer10_CallBack_()
 ** Function name:           fillRoundRect
 ** Description:             Draw a rounded corner filled rectangle
 ***************************************************************************************/
-void MainMenu_ADC_CallBack_()
+void MainMenu_ADC_CallBack()
 {
 	flag_adc = 1;
 }
